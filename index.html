@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Josh</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.jpg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+    <meta name="viewport" content="width =device-width, initial-scale =1">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Poppins&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+</head>
+<body>
+<section id="banner">
+    <img src="img2.jpg" class="logo">
+    <div class="banner-text">
+        <h1>Hi, my name is</h1>
+        <h2>Josh</h2>
+        <p>A Grade 10 student</p>
+        <div class="banner-btn">
+             <a href="#"><span></span>Get Started</a>
+        </div>
+    </div>
+
+</section>
+
+      
+<div id="sideNav">
+    <nav>
+    <ul>
+        <li><a href="#banner">Home</a></li>
+        <li><a href="#feature">About</a></li>
+        <li><a href="#service">Features</a></li>
+        <li><a href="#testimonial">testemonial</a></li>
+        <li><a href="#footer">Contact</a></li>
+    </ul>
+    </nav>
+</div>
+<div id="menuBtn">
+    <img src="menu.jpg" id="menu">
+</div>
+
+<!--Features-->
+
+<section id="feature">
+<div class="title-text">
+<p>FEATURES</p>
+<h1>About Me</h1>
+</div>
+<div class="feature-box">
+     <div class="features">
+         <div class="features-desc">
+            <div class="feature-icon">
+                <i class="fa fa-check"></i>
+            </div>
+            <div class="feature-text">
+                <p>Hi I'm Josh. I am Incoming Grade 11 and i learn advance of Web Development so that i have a small knowledge.
+                I started coding at the age of 15 when i was decided to make my own website I Learn coding through,watching Youtube tutorials</p>
+            </div>
+         </div>
+     </div>
+    <div class="features-img">
+         <img src="img5.jpg">
+    </div>
+  </div>
+
+</section>
+
+<!--Service  -->
+
+<section id="service">
+    <div class="title-text">
+    <p>FEATURES</p>
+    <h1>My Skill Set</h1>
+    </div>
+    <div class="service-box">
+        <div class="single-service">
+            <img src="img6.jpg">
+            <div class="overlay"></div>
+        </div>
+        <div class="single-service">
+            <img src="img7.jpg">
+            <div class="overlay"></div>
+        </div>
+        <div class="single-service">
+            <img src="img9.jpg">
+            <div class="overlay"></div>
+        </div>
+        <div class="single-service">
+            <img src="img10.jpg">
+            <div class="overlay"></div>
+    </div>
+
+</section>
+
+<!-- testemonial  -->
+
+<section id="testimonial">
+    <div class="title-text">
+    <p>TESTEMONIAL</p>
+    <h1>Watch This</h1>
+    </div>
+    <div class="testemonial-row">
+        <div class="wrapper">
+           <video src="video.mp4" autoplay controls>
+        </video>
+    </div>
+
+
+</section>
+
+<!--footer-->
+
+<secion id="footer"></section>
+<div class="title-text">
+    <p>Contact</p>
+    <h1>Thank you</h1>
+</div>
+</div>
+
+<div class="social-links">
+    <h1>By:Josh</h1>
+
+
+<script>
+var menuBtn = document.getElementById("menuBtn")
+var sideNav = document.getElementById("sideNav")
+var menu = document.getElementById("menu")
+
+sideNav.style.right = "-250px";
+
+menuBtn.onclick = function(){
+    if (sideNav.style.right == "-250px"){
+         sideNav.style.right  = "0";
+    }
+    else{
+       sideNav.style.right = "-250px";
+    }
+}
+
+var scroll = new SmoothScroll('a[href*="#"]', {
+	speed: 1000,
+	speedAsDuration: true
+});
+
+
+
+
+</script>
+
+</body>
+</html>
